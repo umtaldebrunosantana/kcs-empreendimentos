@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import kcsLogo from "@/assets/kcs-logo.png.asset.json";
 
 export const WHATSAPP_URL = "https://wa.me/5531981083235";
 
