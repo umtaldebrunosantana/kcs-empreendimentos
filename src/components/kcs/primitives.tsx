@@ -133,20 +133,13 @@ export function WhatsAppFab() {
 }
 
 export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
-  const main = tone === "light" ? "text-white" : "text-navy-900";
-  const sub = tone === "light" ? "text-white/60" : "text-steel-500";
   return (
-    <span className="flex items-center gap-3">
-      <span
-        className={`font-display text-2xl font-bold tracking-tight ${main} border-l-4 border-signal pl-3 leading-none`}
-      >
-        KCS
-      </span>
-      <span className={`hidden text-[11px] uppercase leading-tight tracking-[0.18em] sm:block ${sub}`}>
-        Serralheria e
-        <br />
-        Estruturas Metálicas
-      </span>
-    </span>
+    <img
+      src={kcsLogo.url}
+      alt="KCS Empreendimentos — Serralheria e Estruturas Metálicas"
+      width={600}
+      height={300}
+      className={`h-12 w-auto sm:h-14 ${tone === "dark" ? "invert" : ""}`}
+    />
   );
 }
