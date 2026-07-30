@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-export const WHATSAPP_URL = "https://wa.me/5531983145672".replace(
-  "5531983145672",
-  "5531981083235",
-);
+export const WHATSAPP_URL = "https://wa.me/5531981083235";
 
 export function useInView<T extends HTMLElement>(once = true) {
   const ref = useRef<T | null>(null);
