@@ -390,7 +390,7 @@ export function CtaFinal() {
     <section aria-labelledby="cta-title" className="bg-navy-900 py-24 text-center text-white">
       <div className="container-kcs">
         <h2 id="cta-title" className="mx-auto max-w-3xl text-3xl leading-tight sm:text-4xl">
-          Se você deseja uma estrutura segura e feita para durar…
+          Se você deseja uma estrutura feita para durar…
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-white/75">
           Fale agora com a KCS e receba um orçamento rápido, sem compromisso.
