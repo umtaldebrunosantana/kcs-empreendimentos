@@ -153,14 +153,17 @@ export function Clientes() {
       </div>
       <div className="mt-8 flex overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
         <ul className="flex shrink-0 animate-marquee items-center gap-6 pr-6">
-          {[...CLIENTES, ...CLIENTES].map((nome, i) => (
+          {[...CLIENTES, ...CLIENTES].map(({ nome, logo }, i) => (
             <li
               key={i}
-              /* {{LOGO_CLIENTE}} — substituir por <img src="..." alt="Logo {nome}" /> */
-              data-placeholder="{{LOGO_CLIENTE}}"
-              className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-gray-100 px-4 text-center text-sm font-semibold text-steel-500"
+              className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-6"
             >
-              {nome}
+              <img
+                src={logo}
+                alt={`Logo ${nome}`}
+                loading="lazy"
+                className="max-h-12 w-auto max-w-full object-contain"
+              />
             </li>
           ))}
         </ul>
