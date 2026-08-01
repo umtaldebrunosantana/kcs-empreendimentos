@@ -52,18 +52,18 @@ const DIFERENCIAIS = [
 ];
 
 const SERVICOS = [
-  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout."],
-  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima."],
-  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências."],
-  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia."],
-  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel."],
-  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas."],
-  ["Reforço Estrutural", "Amplie seu imóvel, ganhe vãos livres ou recupere a capacidade de carga da estrutura — gastando menos do que em uma reforma completa."],
-  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel."],
-  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura."],
-  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência."],
-  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados."],
+  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout.", estruturaImg.url],
+  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima.", galpoesImg.url],
+  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências.", gradesImg.url],
+  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia.", portaAcoImg.url],
+  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel.", mezaninoImg.url],
+  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas.", guardaCorpoImg.url],
+  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel.", escadaImg.url],
+  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura.", impermeabilizacaoImg.url],
+  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência.", pinturaImg.url],
+  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados.", limpezaImg.url],
 ] as const;
+
 
 const PASSOS = [
   ["Envie seu projeto", "Compartilhe plantas, medidas ou apenas descreva a sua necessidade."],
