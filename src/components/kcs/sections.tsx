@@ -15,6 +15,13 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-estrutura.jpg";
 import oficinaImg from "@/assets/oficina-kcs.jpg";
+import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
+import sescLogo from "@/assets/clientes/sesc.png.asset.json";
+import sestSenatLogo from "@/assets/clientes/sest-senat.png.asset.json";
+import direcionalLogo from "@/assets/clientes/direcional.png.asset.json";
+import delreyLogo from "@/assets/clientes/delrey.png.asset.json";
+import hcUfmgLogo from "@/assets/clientes/hc-ufmg.png.asset.json";
+import saoRafaelLogo from "@/assets/clientes/sao-rafael.png.asset.json";
 import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
@@ -26,13 +33,13 @@ const SELOS = [
 ];
 
 const CLIENTES = [
-  "Metrô BH",
-  "Sesc",
-  "Sest Senat",
-  "Direcional Engenharia",
-  "Shopping Del Rey",
-  "Hospital das Clínicas",
-  "Hospital São Rafael",
+  { nome: "Metrô BH", logo: metroBhLogo.url },
+  { nome: "Sesc", logo: sescLogo.url },
+  { nome: "Sest Senat", logo: sestSenatLogo.url },
+  { nome: "Direcional Engenharia", logo: direcionalLogo.url },
+  { nome: "Shopping Del Rey", logo: delreyLogo.url },
+  { nome: "Hospital das Clínicas", logo: hcUfmgLogo.url },
+  { nome: "Hospital São Rafael", logo: saoRafaelLogo.url },
 ];
 
 const DIFERENCIAIS = [
@@ -146,14 +153,17 @@ export function Clientes() {
       </div>
       <div className="mt-8 flex overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
         <ul className="flex shrink-0 animate-marquee items-center gap-6 pr-6">
-          {[...CLIENTES, ...CLIENTES].map((nome, i) => (
+          {[...CLIENTES, ...CLIENTES].map(({ nome, logo }, i) => (
             <li
               key={i}
-              /* {{LOGO_CLIENTE}} — substituir por <img src="..." alt="Logo {nome}" /> */
-              data-placeholder="{{LOGO_CLIENTE}}"
-              className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-gray-100 px-4 text-center text-sm font-semibold text-steel-500"
+              className="flex h-20 w-56 shrink-0 items-center justify-center rounded-md border border-border bg-background px-6"
             >
-              {nome}
+              <img
+                src={logo}
+                alt={`Logo ${nome}`}
+                loading="lazy"
+                className="max-h-12 w-auto max-w-full object-contain"
+              />
             </li>
           ))}
         </ul>
