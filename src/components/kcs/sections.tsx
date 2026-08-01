@@ -411,7 +411,7 @@ export function Footer() {
           <Logo tone="light" />
           <p className="mt-6 text-sm">
             <span className="font-semibold text-white">KCS Empreendimentos</span> — CNPJ:{" "}
-            <span data-placeholder="{{CNPJ}}">{"{{CNPJ}}"}</span>
+            <span>60.308.945/0001-05</span>
           </p>
           <p className="mt-4 max-w-lg text-sm leading-relaxed">
             Especialista em estruturas metálicas, serralheria industrial, galpões, mezaninos,
