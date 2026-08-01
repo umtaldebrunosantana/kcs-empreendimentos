@@ -22,6 +22,16 @@ import direcionalLogo from "@/assets/clientes/direcional.png.asset.json";
 import delreyLogo from "@/assets/clientes/delrey.png.asset.json";
 import hcUfmgLogo from "@/assets/clientes/hc-ufmg.png.asset.json";
 import saoRafaelLogo from "@/assets/clientes/sao-rafael.png.asset.json";
+import estruturaImg from "@/assets/servicos/estrutura-metalica.jpg.asset.json";
+import galpoesImg from "@/assets/servicos/galpoes.jpg.asset.json";
+import gradesImg from "@/assets/servicos/grades-portoes.jpg.asset.json";
+import portaAcoImg from "@/assets/servicos/porta-aco.jpg.asset.json";
+import mezaninoImg from "@/assets/servicos/mezanino.jpg.asset.json";
+import guardaCorpoImg from "@/assets/servicos/guarda-corpo.jpg.asset.json";
+import escadaImg from "@/assets/servicos/escada.jpg.asset.json";
+import impermeabilizacaoImg from "@/assets/servicos/impermeabilizacao.jpg.asset.json";
+import pinturaImg from "@/assets/servicos/pintura.jpg.asset.json";
+import limpezaImg from "@/assets/servicos/limpeza.jpg.asset.json";
 import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
@@ -52,18 +62,18 @@ const DIFERENCIAIS = [
 ];
 
 const SERVICOS = [
-  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout."],
-  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima."],
-  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências."],
-  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia."],
-  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel."],
-  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas."],
-  ["Reforço Estrutural", "Amplie seu imóvel, ganhe vãos livres ou recupere a capacidade de carga da estrutura — gastando menos do que em uma reforma completa."],
-  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel."],
-  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura."],
-  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência."],
-  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados."],
+  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout.", estruturaImg.url],
+  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima.", galpoesImg.url],
+  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências.", gradesImg.url],
+  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia.", portaAcoImg.url],
+  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel.", mezaninoImg.url],
+  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas.", guardaCorpoImg.url],
+  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel.", escadaImg.url],
+  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura.", impermeabilizacaoImg.url],
+  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência.", pinturaImg.url],
+  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados.", limpezaImg.url],
 ] as const;
+
 
 const PASSOS = [
   ["Envie seu projeto", "Compartilhe plantas, medidas ou apenas descreva a sua necessidade."],
@@ -258,17 +268,15 @@ export function Servicos() {
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICOS.map(([title, desc], i) => (
+          {SERVICOS.map(([title, desc, img], i) => (
             <Reveal key={title} delay={(i % 4) * 70}>
               <article className="group h-full overflow-hidden rounded-md border border-border bg-background transition-shadow duration-200 hover:shadow-md">
-                <div
-                  /* {{IMG_SERVICO}} — substituir pela foto real do serviço */
-                  data-placeholder="{{IMG_SERVICO}}"
-                  aria-hidden="true"
-                  className="flex aspect-[4/3] items-center justify-center bg-navy-900/90 text-[10px] uppercase tracking-[0.2em] text-white/40"
-                >
-                  {"{{IMG_SERVICO}}"}
-                </div>
+                <img
+                  src={img}
+                  alt={`${title} — serviço executado pela KCS em Belo Horizonte`}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
                 <div className="p-5">
                   <h3 className="text-lg leading-snug">{title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-steel-500">{desc}</p>
