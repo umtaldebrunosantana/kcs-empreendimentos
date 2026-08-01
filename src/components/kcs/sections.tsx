@@ -15,6 +15,13 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-estrutura.jpg";
 import oficinaImg from "@/assets/oficina-kcs.jpg";
+import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
+import sescLogo from "@/assets/clientes/sesc.png.asset.json";
+import sestSenatLogo from "@/assets/clientes/sest-senat.png.asset.json";
+import direcionalLogo from "@/assets/clientes/direcional.png.asset.json";
+import delreyLogo from "@/assets/clientes/delrey.png.asset.json";
+import hcUfmgLogo from "@/assets/clientes/hc-ufmg.png.asset.json";
+import saoRafaelLogo from "@/assets/clientes/sao-rafael.png.asset.json";
 import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
@@ -26,13 +33,13 @@ const SELOS = [
 ];
 
 const CLIENTES = [
-  "Metrô BH",
-  "Sesc",
-  "Sest Senat",
-  "Direcional Engenharia",
-  "Shopping Del Rey",
-  "Hospital das Clínicas",
-  "Hospital São Rafael",
+  { nome: "Metrô BH", logo: metroBhLogo.url },
+  { nome: "Sesc", logo: sescLogo.url },
+  { nome: "Sest Senat", logo: sestSenatLogo.url },
+  { nome: "Direcional Engenharia", logo: direcionalLogo.url },
+  { nome: "Shopping Del Rey", logo: delreyLogo.url },
+  { nome: "Hospital das Clínicas", logo: hcUfmgLogo.url },
+  { nome: "Hospital São Rafael", logo: saoRafaelLogo.url },
 ];
 
 const DIFERENCIAIS = [
