@@ -22,6 +22,16 @@ import direcionalLogo from "@/assets/clientes/direcional.png.asset.json";
 import delreyLogo from "@/assets/clientes/delrey.png.asset.json";
 import hcUfmgLogo from "@/assets/clientes/hc-ufmg.png.asset.json";
 import saoRafaelLogo from "@/assets/clientes/sao-rafael.png.asset.json";
+import estruturaImg from "@/assets/servicos/estrutura-metalica.jpg.asset.json";
+import galpoesImg from "@/assets/servicos/galpoes.jpg.asset.json";
+import gradesImg from "@/assets/servicos/grades-portoes.jpg.asset.json";
+import portaAcoImg from "@/assets/servicos/porta-aco.jpg.asset.json";
+import mezaninoImg from "@/assets/servicos/mezanino.jpg.asset.json";
+import guardaCorpoImg from "@/assets/servicos/guarda-corpo.jpg.asset.json";
+import escadaImg from "@/assets/servicos/escada.jpg.asset.json";
+import impermeabilizacaoImg from "@/assets/servicos/impermeabilizacao.jpg.asset.json";
+import pinturaImg from "@/assets/servicos/pintura.jpg.asset.json";
+import limpezaImg from "@/assets/servicos/limpeza.jpg.asset.json";
 import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
