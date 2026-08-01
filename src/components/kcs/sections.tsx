@@ -14,7 +14,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import heroImg from "@/assets/hero-estrutura.jpg";
-import oficinaImg from "@/assets/oficina-kcs.jpg";
+import equipeImg from "@/assets/equipe-kcs.png.asset.json";
 import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
 import sescLogo from "@/assets/clientes/sesc.png.asset.json";
 import sestSenatLogo from "@/assets/clientes/sest-senat.png.asset.json";
@@ -372,10 +372,10 @@ export function Sobre() {
         </Reveal>
         <Reveal delay={100}>
           <img
-            src={oficinaImg}
-            alt="Soldador da KCS trabalhando na fabricação de uma viga metálica"
-            width={1280}
-            height={960}
+            src={equipeImg.url}
+            alt="Equipe da KCS Serralheria e Estruturas Metálicas reunida na fábrica em Belo Horizonte"
+            width={1080}
+            height={1080}
             loading="lazy"
             className="w-full rounded-md object-cover"
           />
