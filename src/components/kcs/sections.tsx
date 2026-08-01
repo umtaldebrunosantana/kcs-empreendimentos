@@ -268,17 +268,15 @@ export function Servicos() {
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICOS.map(([title, desc], i) => (
+          {SERVICOS.map(([title, desc, img], i) => (
             <Reveal key={title} delay={(i % 4) * 70}>
               <article className="group h-full overflow-hidden rounded-md border border-border bg-background transition-shadow duration-200 hover:shadow-md">
-                <div
-                  /* {{IMG_SERVICO}} — substituir pela foto real do serviço */
-                  data-placeholder="{{IMG_SERVICO}}"
-                  aria-hidden="true"
-                  className="flex aspect-[4/3] items-center justify-center bg-navy-900/90 text-[10px] uppercase tracking-[0.2em] text-white/40"
-                >
-                  {"{{IMG_SERVICO}}"}
-                </div>
+                <img
+                  src={img}
+                  alt={`${title} — serviço executado pela KCS em Belo Horizonte`}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
                 <div className="p-5">
                   <h3 className="text-lg leading-snug">{title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-steel-500">{desc}</p>
