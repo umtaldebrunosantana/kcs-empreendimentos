@@ -372,10 +372,10 @@ export function Sobre() {
         </Reveal>
         <Reveal delay={100}>
           <img
-            src={oficinaImg}
-            alt="Soldador da KCS trabalhando na fabricação de uma viga metálica"
-            width={1280}
-            height={960}
+            src={equipeImg.url}
+            alt="Equipe da KCS Serralheria e Estruturas Metálicas reunida na fábrica em Belo Horizonte"
+            width={1080}
+            height={1080}
             loading="lazy"
             className="w-full rounded-md object-cover"
           />
