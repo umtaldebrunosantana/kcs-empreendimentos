@@ -14,7 +14,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import heroImg from "@/assets/hero-estrutura.jpg";
-import oficinaImg from "@/assets/oficina-kcs.jpg";
+import equipeImg from "@/assets/equipe-kcs.png.asset.json";
 import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
 import sescLogo from "@/assets/clientes/sesc.png.asset.json";
 import sestSenatLogo from "@/assets/clientes/sest-senat.png.asset.json";
