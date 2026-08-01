@@ -390,7 +390,7 @@ export function CtaFinal() {
     <section aria-labelledby="cta-title" className="bg-navy-900 py-24 text-center text-white">
       <div className="container-kcs">
         <h2 id="cta-title" className="mx-auto max-w-3xl text-3xl leading-tight sm:text-4xl">
-          Se você deseja uma estrutura segura e feita para durar…
+          Se você deseja uma estrutura feita para durar…
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-white/75">
           Fale agora com a KCS e receba um orçamento rápido, sem compromisso.
@@ -411,7 +411,7 @@ export function Footer() {
           <Logo tone="light" />
           <p className="mt-6 text-sm">
             <span className="font-semibold text-white">KCS Empreendimentos</span> — CNPJ:{" "}
-            <span data-placeholder="{{CNPJ}}">{"{{CNPJ}}"}</span>
+            <span>60.308.945/0001-05</span>
           </p>
           <p className="mt-4 max-w-lg text-sm leading-relaxed">
             Especialista em estruturas metálicas, serralheria industrial, galpões, mezaninos,
