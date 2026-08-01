@@ -178,11 +178,11 @@ export function Dores() {
       <div className="container-kcs grid gap-12 lg:grid-cols-2">
         <Reveal>
           <h2 id="dores-title" className="text-3xl leading-tight sm:text-4xl">
-            Falta de retorno, atraso na obra e serviço malfeito? Aqui não!
+            Quem gerencia obra sabe...
           </h2>
           <p className="mt-6 text-base leading-relaxed text-steel-500">
-            Quem gerencia obra sabe: fornecedor que não entrega no prazo, não segue projeto ou não
-            tem estrutura para atender sua demanda gera prejuízo, retrabalho e multas contratuais.
+            Fornecedor que não entrega no prazo, não segue projeto ou não tem estrutura para atender
+            sua demanda gera prejuízo, retrabalho e multas contratuais.
           </p>
           <p className="mt-6 font-semibold">Se você já passou por:</p>
           <ul className="mt-4 space-y-3">
@@ -363,11 +363,11 @@ export function Sobre() {
           <p className="mt-6 leading-relaxed text-steel-500">
             A KCS nasceu em 2025 trazendo na bagagem mais de 20 anos de experiência em projetos de
             estrutura metálica e serralheria. Thalisson, responsável geral, seguiu os passos do pai
-            e ingressou no setor ainda jovem.
+            e ingressou no setor ainda jovem. Hoje, desenvolve projetos de todos os portes com
+            fabricação própria e equipe especializada, o que garante controle total de qualidade,
+            prazo e atendimento.
           </p>
           <p className="mt-4 leading-relaxed text-steel-500">
-            Hoje, desenvolve projetos de todos os portes com fabricação própria e equipe
-            especializada, o que garante controle total de qualidade, prazo e atendimento.
           </p>
         </Reveal>
         <Reveal delay={100}>
