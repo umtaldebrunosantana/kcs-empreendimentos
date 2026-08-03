@@ -13,7 +13,7 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
-import heroImg from "@/assets/hero-estrutura.jpg";
+import heroImg from "@/assets/hero-montagem-estrutura.png.asset.json";
 import equipeImg from "@/assets/equipe-kcs.png.asset.json";
 import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
 import sescLogo from "@/assets/clientes/sesc.png.asset.json";
@@ -93,13 +93,19 @@ export function Hero() {
   return (
     <header className="relative isolate overflow-hidden bg-navy-900 text-white">
       <img
-        src={heroImg}
-        alt="Galpão industrial com estrutura metálica executada pela KCS"
+        src={heroImg.url}
+        alt="Montagem de estrutura metálica executada pela KCS"
         width={1920}
         height={1080}
-        className="absolute inset-0 -z-10 size-full object-cover opacity-25"
+        className="absolute inset-0 -z-10 size-full object-cover object-[30%_center] opacity-80"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/80 via-navy-900/85 to-navy-900" />
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(2,12,27,0.90) 0%, rgba(2,12,27,0.55) 40%, rgba(2,12,27,0.15) 65%, transparent 85%)",
+        }}
+      />
 
       <nav className="container-kcs flex items-center justify-between py-6">
         <Logo tone="light" />
