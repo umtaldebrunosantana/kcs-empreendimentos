@@ -103,8 +103,12 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(90deg, rgba(2,12,27,0.95) 0%, rgba(2,12,27,0.70) 40%, rgba(2,12,27,0.30) 65%, transparent 85%)",
+            "linear-gradient(90deg, rgba(2,12,27,0.95) 0%, rgba(2,12,27,0.75) 40%, rgba(2,12,27,0.45) 65%, rgba(2,12,27,0.15) 85%)",
         }}
+      />
+      <div
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/80 via-navy-900/45 to-navy-900/80 sm:from-navy-950/55 sm:via-navy-900/30 sm:to-navy-900/55 lg:from-navy-950/30 lg:via-transparent lg:to-navy-900/35"
+        aria-hidden="true"
       />
 
       <nav className="container-kcs flex items-center justify-between py-6">
