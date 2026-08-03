@@ -93,13 +93,14 @@ export function Hero() {
   return (
     <header className="relative isolate overflow-hidden bg-navy-900 text-white">
       <img
-        src={heroImg}
-        alt="Galpão industrial com estrutura metálica executada pela KCS"
+        src={heroImg.url}
+        alt="Montagem de estrutura metálica executada pela KCS"
         width={1920}
         height={1080}
-        className="absolute inset-0 -z-10 size-full object-cover opacity-25"
+        className="absolute inset-0 -z-10 size-full object-cover object-center opacity-30"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/80 via-navy-900/85 to-navy-900" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/92 via-navy-900/88 to-navy-900/95" />
+      <div className="absolute inset-0 -z-10 bg-navy-950/25" />
 
       <nav className="container-kcs flex items-center justify-between py-6">
         <Logo tone="light" />
