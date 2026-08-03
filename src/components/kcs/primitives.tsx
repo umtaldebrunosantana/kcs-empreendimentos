@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import kcsLogo from "@/assets/kcs-logo.png.asset.json";
 
-export const WHATSAPP_URL = "https://wa.me/5531981083235";
+export const WHATSAPP_URL = "https://wa.me/5531981083235?text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto.&utm_source=chatgpt.com";
 
 export function useInView<T extends HTMLElement>(once = true) {
   const ref = useRef<T | null>(null);
