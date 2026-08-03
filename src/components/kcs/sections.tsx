@@ -13,7 +13,7 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
-import heroImg from "@/assets/hero-estrutura.jpg";
+import heroImg from "@/assets/hero-montagem-estrutura.png.asset.json";
 import equipeImg from "@/assets/equipe-kcs.png.asset.json";
 import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
 import sescLogo from "@/assets/clientes/sesc.png.asset.json";
