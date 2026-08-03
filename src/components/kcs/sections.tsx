@@ -97,13 +97,13 @@ export function Hero() {
         alt="Montagem de estrutura metálica executada pela KCS"
         width={1920}
         height={1080}
-        className="absolute inset-0 -z-10 size-full object-cover object-[30%_center] opacity-80"
+        className="absolute inset-0 -z-10 size-full object-cover object-[30%_center] opacity-75"
       />
       <div
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(90deg, rgba(2,12,27,0.90) 0%, rgba(2,12,27,0.55) 40%, rgba(2,12,27,0.15) 65%, transparent 85%)",
+            "linear-gradient(90deg, rgba(2,12,27,0.95) 0%, rgba(2,12,27,0.70) 40%, rgba(2,12,27,0.30) 65%, transparent 85%)",
         }}
       />
 
