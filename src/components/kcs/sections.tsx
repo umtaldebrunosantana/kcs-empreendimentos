@@ -24,13 +24,13 @@ const SELOS = [
 ];
 
 const CLIENTES = [
-  { nome: "Metrô BH", logo: "/images/clientes/metro-bh.webp" },
-  { nome: "Sesc", logo: "/images/clientes/sesc.webp" },
-  { nome: "Sest Senat", logo: "/images/clientes/sest-senat.webp" },
-  { nome: "Direcional Engenharia", logo: "/images/clientes/direcional.webp" },
-  { nome: "Shopping Del Rey", logo: "/images/clientes/delrey.webp" },
-  { nome: "Hospital das Clínicas", logo: "/images/clientes/hc-ufmg.webp" },
-  { nome: "Hospital São Rafael", logo: "/images/clientes/sao-rafael.webp" },
+  { nome: "Metrô BH", logo: "/images/clientes/metro-bh.png" },
+  { nome: "Sesc", logo: "/images/clientes/sesc.png" },
+  { nome: "Sest Senat", logo: "/images/clientes/sest-senat.png" },
+  { nome: "Direcional Engenharia", logo: "/images/clientes/direcional.png" },
+  { nome: "Shopping Del Rey", logo: "/images/clientes/delrey.png" },
+  { nome: "Hospital das Clínicas", logo: "/images/clientes/hc-ufmg.png" },
+  { nome: "Hospital São Rafael", logo: "/images/clientes/sao-rafael.png" },
 ];
 
 const DIFERENCIAIS = [
