@@ -13,25 +13,6 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
-import heroImg from "@/assets/hero-montagem-estrutura.png.asset.json";
-import equipeImg from "@/assets/equipe-kcs.png.asset.json";
-import metroBhLogo from "@/assets/clientes/metro-bh.png.asset.json";
-import sescLogo from "@/assets/clientes/sesc.png.asset.json";
-import sestSenatLogo from "@/assets/clientes/sest-senat.png.asset.json";
-import direcionalLogo from "@/assets/clientes/direcional.png.asset.json";
-import delreyLogo from "@/assets/clientes/delrey.png.asset.json";
-import hcUfmgLogo from "@/assets/clientes/hc-ufmg.png.asset.json";
-import saoRafaelLogo from "@/assets/clientes/sao-rafael.png.asset.json";
-import estruturaImg from "@/assets/servicos/estrutura-metalica.jpg.asset.json";
-import galpoesImg from "@/assets/servicos/galpoes.jpg.asset.json";
-import gradesImg from "@/assets/servicos/grades-portoes.jpg.asset.json";
-import portaAcoImg from "@/assets/servicos/porta-aco.jpg.asset.json";
-import mezaninoImg from "@/assets/servicos/mezanino.jpg.asset.json";
-import guardaCorpoImg from "@/assets/servicos/guarda-corpo.jpg.asset.json";
-import escadaImg from "@/assets/servicos/escada.jpg.asset.json";
-import impermeabilizacaoImg from "@/assets/servicos/impermeabilizacao.jpg.asset.json";
-import pinturaImg from "@/assets/servicos/pintura.jpg.asset.json";
-import limpezaImg from "@/assets/servicos/limpeza.jpg.asset.json";
 import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
@@ -43,13 +24,13 @@ const SELOS = [
 ];
 
 const CLIENTES = [
-  { nome: "Metrô BH", logo: metroBhLogo.url },
-  { nome: "Sesc", logo: sescLogo.url },
-  { nome: "Sest Senat", logo: sestSenatLogo.url },
-  { nome: "Direcional Engenharia", logo: direcionalLogo.url },
-  { nome: "Shopping Del Rey", logo: delreyLogo.url },
-  { nome: "Hospital das Clínicas", logo: hcUfmgLogo.url },
-  { nome: "Hospital São Rafael", logo: saoRafaelLogo.url },
+  { nome: "Metrô BH", logo: "/images/clientes/metro-bh.webp" },
+  { nome: "Sesc", logo: "/images/clientes/sesc.webp" },
+  { nome: "Sest Senat", logo: "/images/clientes/sest-senat.webp" },
+  { nome: "Direcional Engenharia", logo: "/images/clientes/direcional.webp" },
+  { nome: "Shopping Del Rey", logo: "/images/clientes/delrey.webp" },
+  { nome: "Hospital das Clínicas", logo: "/images/clientes/hc-ufmg.webp" },
+  { nome: "Hospital São Rafael", logo: "/images/clientes/sao-rafael.webp" },
 ];
 
 const DIFERENCIAIS = [
@@ -62,16 +43,16 @@ const DIFERENCIAIS = [
 ];
 
 const SERVICOS = [
-  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout.", estruturaImg.url],
-  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima.", galpoesImg.url],
-  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências.", gradesImg.url],
-  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia.", portaAcoImg.url],
-  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel.", mezaninoImg.url],
-  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas.", guardaCorpoImg.url],
-  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel.", escadaImg.url],
-  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura.", impermeabilizacaoImg.url],
-  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência.", pinturaImg.url],
-  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados.", limpezaImg.url],
+  ["Estrutura Metálica", "Sólida, resistente e econômica. Ganhe velocidade de obra, vãos livres generosos e flexibilidade total de layout.", "/images/servicos/estrutura-metalica.webp"],
+  ["Galpões e Coberturas", "Proteção contra chuva, calor e umidade — operação a todo vapor independente do clima.", "/images/servicos/galpoes.webp"],
+  ["Grades e Portões", "Mais controle de acesso e segurança para empresas, indústrias e residências.", "/images/servicos/grades-portoes.webp"],
+  ["Porta de Aço Automática", "Uma junção de segurança e praticidade — zero esforço manual e total comodidade no dia a dia.", "/images/servicos/porta-aco.webp"],
+  ["Mezaninos Metálicos", "Para estoque, escritório ou área operacional — dobre sua área útil sem precisar ampliar o imóvel.", "/images/servicos/mezanino.webp"],
+  ["Guarda-Corpo e Corrimão", "Fabricação e instalação conforme NBR 14718, evitando acidentes, interdições e multas.", "/images/servicos/guarda-corpo.webp"],
+  ["Escadas Metálicas", "Fabricação e instalação conforme NR12 garantindo segurança e circulação ágil entre os níveis do imóvel.", "/images/servicos/escada.webp"],
+  ["Impermeabilização", "Protege lajes, telhados, coberturas e paredes contra infiltrações e aumenta a vida útil da estrutura.", "/images/servicos/impermeabilizacao.webp"],
+  ["Pintura em Geral", "Revitalizamos estruturas metálicas, áreas internas e externas como paredes e fachadas — recuperando a proteção, o acabamento e a aparência.", "/images/servicos/pintura.webp"],
+  ["Limpeza Industrial", "Limpeza e lavagem técnica de telhados, pisos, paredes, caixas d'água, reservatórios e piscinas — removendo sujeira, mofo e resíduos acumulados.", "/images/servicos/limpeza.webp"],
 ] as const;
 
 
@@ -93,10 +74,10 @@ export function Hero() {
   return (
     <header className="relative isolate overflow-hidden bg-navy-900 text-white">
       <img
-        src={heroImg.url}
+        src="/images/hero-montagem-estrutura.webp"
         alt="Montagem de estrutura metálica executada pela KCS"
         width={1920}
-        height={1080}
+        height={1008}
         className="absolute inset-0 -z-10 size-full object-cover object-[30%_center] opacity-75"
       />
       <div
@@ -182,6 +163,8 @@ export function Clientes() {
                 src={logo}
                 alt={`Logo ${nome}`}
                 loading="lazy"
+                width={400}
+                height={200}
                 className="max-h-12 w-auto max-w-full object-contain"
               />
             </li>
@@ -285,6 +268,8 @@ export function Servicos() {
                   src={img}
                   alt={`${title} — serviço executado pela KCS em Belo Horizonte`}
                   loading="lazy"
+                  width={1000}
+                  height={750}
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <div className="p-5">
@@ -390,7 +375,7 @@ export function Sobre() {
         </Reveal>
         <Reveal delay={100}>
           <img
-            src={equipeImg.url}
+            src="/images/equipe-kcs.webp"
             alt="Equipe da KCS Serralheria e Estruturas Metálicas reunida na fábrica em Belo Horizonte"
             width={1080}
             height={1080}
