@@ -163,6 +163,8 @@ export function Clientes() {
                 src={logo}
                 alt={`Logo ${nome}`}
                 loading="lazy"
+                width={400}
+                height={200}
                 className="max-h-12 w-auto max-w-full object-contain"
               />
             </li>
@@ -266,6 +268,8 @@ export function Servicos() {
                   src={img}
                   alt={`${title} — serviço executado pela KCS em Belo Horizonte`}
                   loading="lazy"
+                  width={1000}
+                  height={750}
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <div className="p-5">
