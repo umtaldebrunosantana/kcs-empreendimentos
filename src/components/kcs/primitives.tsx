@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import kcsLogo from "@/assets/kcs-logo.png.asset.json";
 
 export const WHATSAPP_URL = "https://wa.me/5531981083235?text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto.&utm_source=chatgpt.com";
 
@@ -136,7 +135,7 @@ export function WhatsAppFab() {
 export function Logo({ tone = "light" }: { tone?: "light" | "dark" }) {
   return (
     <img
-      src={kcsLogo.url}
+      src="/images/logo-kcs.webp"
       alt="KCS Empreendimentos — Serralheria e Estruturas Metálicas"
       width={600}
       height={300}
