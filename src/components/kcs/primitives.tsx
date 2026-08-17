@@ -154,6 +154,7 @@ export function WhatsAppFab() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a KCS no WhatsApp"
+      {...ctaTrackingProps("fab_flutuante")}
       className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-signal text-white shadow-lg transition-transform duration-200 hover:scale-105"
     >
       <WhatsAppIcon className="size-7" />
