@@ -2,6 +2,32 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export const WHATSAPP_URL = "https://wa.me/5531981083235?text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto.&utm_source=chatgpt.com";
 
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
+/** Dispara o evento customizado `cta_whatsapp` no dataLayer do GTM. */
+export function pushCtaEvent(location: string) {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "cta_whatsapp",
+    cta_location: location,
+    cta_destination: "whatsapp",
+  });
+}
+
+/** Props padrão para qualquer link de CTA rastreado pelo GTM. */
+export function ctaTrackingProps(location: string) {
+  return {
+    "data-gtm-event": "cta_whatsapp",
+    "data-gtm-location": location,
+    onClick: () => pushCtaEvent(location),
+  } as const;
+}
+
 export function useInView<T extends HTMLElement>(once = true) {
   const ref = useRef<T | null>(null);
   const [inView, setInView] = useState(false);
