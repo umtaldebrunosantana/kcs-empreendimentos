@@ -2,6 +2,32 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export const WHATSAPP_URL = "https://wa.me/5531981083235?text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento+para+meu+projeto.&utm_source=chatgpt.com";
 
+declare global {
+  interface Window {
+    dataLayer?: Record<string, unknown>[];
+  }
+}
+
+/** Dispara o evento customizado `cta_whatsapp` no dataLayer do GTM. */
+export function pushCtaEvent(location: string) {
+  if (typeof window === "undefined") return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "cta_whatsapp",
+    cta_location: location,
+    cta_destination: "whatsapp",
+  });
+}
+
+/** Props padrão para qualquer link de CTA rastreado pelo GTM. */
+export function ctaTrackingProps(location: string) {
+  return {
+    "data-gtm-event": "cta_whatsapp",
+    "data-gtm-location": location,
+    onClick: () => pushCtaEvent(location),
+  } as const;
+}
+
 export function useInView<T extends HTMLElement>(once = true) {
   const ref = useRef<T | null>(null);
   const [inView, setInView] = useState(false);
@@ -66,10 +92,12 @@ export function CtaButton({
   children,
   size = "md",
   className = "",
+  location = "cta",
 }: {
   children: ReactNode;
   size?: "md" | "lg";
   className?: string;
+  location?: string;
 }) {
   const pad = size === "lg" ? "px-9 py-5 text-lg" : "px-7 py-4 text-base";
   return (
@@ -77,6 +105,7 @@ export function CtaButton({
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      {...ctaTrackingProps(location)}
       className={`inline-flex items-center justify-center gap-3 rounded-md bg-signal font-semibold tracking-wide text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:brightness-110 ${pad} ${className}`}
     >
       <WhatsAppIcon className={size === "lg" ? "size-6" : "size-5"} />
@@ -125,6 +154,7 @@ export function WhatsAppFab() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar com a KCS no WhatsApp"
+      {...ctaTrackingProps("fab_flutuante")}
       className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-signal text-white shadow-lg transition-transform duration-200 hover:scale-105"
     >
       <WhatsAppIcon className="size-7" />

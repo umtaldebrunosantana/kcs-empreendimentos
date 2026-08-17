@@ -13,7 +13,7 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
-import { CtaButton, Counter, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
+import { CtaButton, Counter, ctaTrackingProps, Logo, Reveal, WHATSAPP_URL, WhatsAppIcon } from "./primitives";
 
 const SELOS = [
   "Mais de 20 anos de mercado",
@@ -96,6 +96,7 @@ export function Hero() {
         <Logo tone="light" />
         <a
           href={WHATSAPP_URL}
+          {...ctaTrackingProps("header_telefone")}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-md border border-white/25 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/10 sm:inline-flex"
@@ -118,7 +119,7 @@ export function Hero() {
             Região com agilidade, qualidade e segurança.
           </p>
           <div className="mt-9">
-            <CtaButton size="lg">Orçamento no WhatsApp</CtaButton>
+            <CtaButton size="lg" location="hero">Orçamento no WhatsApp</CtaButton>
           </div>
         </div>
       </div>
@@ -314,7 +315,7 @@ export function ComoFunciona() {
         </ol>
 
         <div className="mt-14">
-          <CtaButton>Solicitar Meu Orçamento Agora</CtaButton>
+          <CtaButton location="diferenciais">Solicitar Meu Orçamento Agora</CtaButton>
         </div>
       </div>
     </section>
@@ -342,6 +343,7 @@ export function AreaAtuacao() {
           Sua cidade não está na lista?{" "}
           <a
             href={WHATSAPP_URL}
+            {...ctaTrackingProps("area_atuacao")}
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-navy-900 underline underline-offset-4"
@@ -399,7 +401,7 @@ export function CtaFinal() {
           Fale agora com a KCS e receba um orçamento rápido, sem compromisso.
         </p>
         <div className="mt-10">
-          <CtaButton size="lg">Falar com a KCS</CtaButton>
+          <CtaButton size="lg" location="cta_final">Falar com a KCS</CtaButton>
         </div>
       </div>
     </section>
@@ -440,6 +442,7 @@ export function Footer() {
             <WhatsAppIcon className="mt-0.5 size-4 shrink-0 text-signal" />
             <a
               href={WHATSAPP_URL}
+              {...ctaTrackingProps("rodape_telefone")}
               target="_blank"
               rel="noopener noreferrer"
               className="tnum font-semibold text-white underline underline-offset-4"
