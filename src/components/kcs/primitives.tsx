@@ -92,10 +92,12 @@ export function CtaButton({
   children,
   size = "md",
   className = "",
+  location = "cta",
 }: {
   children: ReactNode;
   size?: "md" | "lg";
   className?: string;
+  location?: string;
 }) {
   const pad = size === "lg" ? "px-9 py-5 text-lg" : "px-7 py-4 text-base";
   return (
@@ -103,6 +105,7 @@ export function CtaButton({
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
+      {...ctaTrackingProps(location)}
       className={`inline-flex items-center justify-center gap-3 rounded-md bg-signal font-semibold tracking-wide text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5 hover:brightness-110 ${pad} ${className}`}
     >
       <WhatsAppIcon className={size === "lg" ? "size-6" : "size-5"} />
